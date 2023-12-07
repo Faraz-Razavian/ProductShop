@@ -1,12 +1,19 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 text-white">
-      <nav className="flex items-center justify-between max-w-6xl mx-auto p-4">
-        <div>
-          <a href="#" className="text-2xl font-bold">Your Logo</a>
-        </div>
+      <nav className="flex items-center justify-between max-w-6xl mx-auto p-2">
+      <div className="rounded-lg overflow-hidden">  {/* Set your desired border-radius here */}
+      <Image 
+        src="/logo.png"
+        alt="logo"
+        width={50}  // The width of your logo in pixels
+        height={50}  // The height of your logo in pixels
+        layout="intrinsic"  // This could be fixed, intrinsic, responsive etc.
+      />
+</div>
         <div>
           <ul className="flex space-x-4">
             <li><a href="/" className="hover:underline">Home</a></li>
