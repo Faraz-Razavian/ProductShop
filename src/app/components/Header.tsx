@@ -5,13 +5,13 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 text-white">
       <nav className="flex items-center justify-between max-w-6xl mx-auto p-2">
-      <div className="rounded-lg overflow-hidden">  {/* Set your desired border-radius here */}
+      <div className="rounded-lg overflow-hidden"> 
       <Image 
         src="/logo.png"
         alt="logo"
-        width={50}  // The width of your logo in pixels
-        height={50}  // The height of your logo in pixels
-        layout="intrinsic"  // This could be fixed, intrinsic, responsive etc.
+        width={50}
+        height={50}
+        layout="intrinsic"
       />
 </div>
         <div>
