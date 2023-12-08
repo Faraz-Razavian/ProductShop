@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import { Product } from '../../data/productDetailsData'; // Adjust the import path as needed
+import { Product } from '../../data/productDetailsData'; 
 import Link from 'next/link';
 
 interface ProductCardProps {
