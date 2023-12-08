@@ -23,7 +23,7 @@ const Home = () => {
       </div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full">
-        <h1 className="text-4xl font-extrabold text-white tracking-tight text-center sm:text-5xl md:text-6xl">
+        <h1 className="text-4xl font-extrabold text-gray-300 tracking-tight text-center sm:text-5xl md:text-6xl">
           <span className="block">Discover Your Perfect Pair</span>
         </h1>
         <p className="mt-4 max-w-md mx-auto text-base text-gray-300 text-center sm:text-lg md:mt-8 md:text-xl md:max-w-3xl">
