@@ -13,7 +13,7 @@ const Home = () => {
     <div className="relative overflow-hidden h-screen">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/topBanner/topBanner.avif"
+          src="/topBanner/homeCover.jpg"
           alt="Stylish sunglasses on a bright background"
           layout="fill"
           objectFit="cover"
