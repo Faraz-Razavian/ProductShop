@@ -1,4 +1,5 @@
 export interface Product {
+    fId:number,
     id: number;
     brand: string;
     model: string;
@@ -13,6 +14,7 @@ export interface Product {
 
 export const PRODUCT_INFO: Product[] = [
     {
+      fId:1,
       id: 1,
       brand: 'FashionFrames',
       model: 'SleekVision',
@@ -25,18 +27,20 @@ export const PRODUCT_INFO: Product[] = [
       imageUrl: '/products/p1.jpeg',
     },
     {
+      fId:2,
       id: 2,
       brand: 'TrendyOptics',
       model: 'ChicStyle',
       frameMaterial: 'Plastic',
       lensMaterial: 'CR-39',
-      color: 'Tortoise Shell',
+      color: 'gold',
       changeColors:["white","blue","red"],
       price: 39.99,
       rating: 4.2,
       imageUrl: '/products/p2.jpg',
     },
     {
+      fId:3,
       id: 3,
       brand: 'SportyShades',
       model: 'ActivePro',
@@ -49,6 +53,7 @@ export const PRODUCT_INFO: Product[] = [
       imageUrl: '/products/p3.jpg',
     },
     {
+        fId:4,
         id: 4,
         brand: 'ClassicEyewear',
         model: 'Elegance',
@@ -61,18 +66,20 @@ export const PRODUCT_INFO: Product[] = [
         imageUrl: '/products/p4.jpg',
       },
       {
+        fId:5,
         id: 5,
         brand: 'RetroVision',
         model: 'VintageCharm',
         frameMaterial: 'Acetate',
         lensMaterial: 'Glass',
-        color: 'Red',
+        color: 'Black',
         changeColors:["white","yellow","red"],
         price: 69.99,
         rating: 4.4,
         imageUrl: '/products/p5.jpg',
       },
       {
+        fId:6,
         id: 6,
         brand: 'ModernEdge',
         model: 'TechGlow',

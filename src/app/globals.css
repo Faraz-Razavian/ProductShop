@@ -4,24 +4,25 @@
 
 :root {
   --foreground-rgb: 211, 211, 211; /* Light Gray foreground */
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220; /* Starting color of gradient */
+  --background-end-rgb: 255, 255, 255; /* Ending color of gradient */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 211, 211, 211; /* Light Gray also for dark scheme */
-    --background-start-rgb: 100, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 211, 211, 211; /* Light Gray for dark theme */
+    --background-start-rgb: 100, 0, 0; /* Starting color of gradient for dark theme */
+    --background-end-rgb: 0, 0, 0; /* Ending color of gradient for dark theme */
   }
 }
 
 body {
+  @apply bg-no-repeat;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(
+    to top, /* This makes the gradient go from bottom to top */
+    rgb(var(--background-end-rgb)),
+    rgb(var(--background-start-rgb))
+  );
+  background-color: rgb(var(--background-start-rgb));
 }

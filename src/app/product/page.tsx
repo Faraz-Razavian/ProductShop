@@ -1,5 +1,5 @@
-import { PRODUCT_INFO } from '../../data/productDetailsData'; // Adjust the import path as needed
-import ProductCard from '../components/ProductCard'; // Adjust the import path as needed
+import { PRODUCT_INFO } from '../../data/productDetailsData';
+import ProductCard from '../components/ProductCard';
 
 export default function Product() {
   return (

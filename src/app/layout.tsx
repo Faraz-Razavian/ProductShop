@@ -6,18 +6,15 @@ import Footer from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-type RootLayoutProps = {
+export default function RootLayout({ children }: {
   children: React.ReactNode;
-};
-
-const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
+}) {
   return (
-    <>
-      <Header />
-      <main className={inter.className}>{children}</main>
-      <Footer />
-    </>
+    <html lang="en">
+        <body className={inter.className}>
+          <Header/>
+            {children}
+          </body>
+    </html>
   );
-};
-
-export default RootLayout;
+}
